@@ -1,0 +1,18 @@
+<mat-grid-list cols="1" rowHeight="100px" gutterSize="1px" class="mt-10" >
+   <!-- Cards with media area -->
+<mat-card class="example-card">
+  <mat-card-title-group class="wrapper-video">
+    <div class="wrapper-title">
+      <mat-card-title>{{video.title}}</mat-card-title>
+      <mat-card-subtitle>{{video.description}}</mat-card-subtitle>
+    </div>
+    <div class="wrapper-open">
+      <img mat-card-sm-image [src]="video.thumbnails" >
+      <button mat-button color="warn"  (click)="openDialog()">Play
+        <i class="fas fa-play"></i>
+      </button>
+    </div>
+  </mat-card-title-group>
+</mat-card>
+  </mat-grid-list>
+

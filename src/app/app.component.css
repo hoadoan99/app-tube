@@ -1,0 +1,13 @@
+.setting{
+  display: flex;
+  justify-content: flex-end;
+
+}
+.setting button{
+  background-color: transparent;
+  border: none;
+}
+.setting button i{
+  font-size: 30px;
+  color: #ccc;
+}

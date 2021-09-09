@@ -1,0 +1,22 @@
+mat-grid-tile{
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+  }
+  .wrapper-video{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+  .wrapper-title, .wrapper-open{
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper-open{
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    font-size: 26px;
+  }
+

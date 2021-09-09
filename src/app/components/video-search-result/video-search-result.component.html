@@ -1,0 +1,34 @@
+<div class="body">
+    <!-- sort -- header bottom  -->
+  <div class="sort">
+    <mat-grid-list cols="1" rowHeight="50px" gutterSize="20px"  >
+      <mat-grid-tile>
+        <div class="sort-content">
+          <button mat-button [matMenuTriggerFor]="menu"><mat-icon>sort</mat-icon>Sort</button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+          </mat-menu>
+          <span>order </span>
+          <span>From </span>
+          <span>Thu Nov 01 2018 21:37:41 </span> To
+          <span>Thu Nov 01 2018 21:37:41</span>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+    <!-- video result  -->
+    <div class="video-result" *ngFor="let item of data">
+      <app-video-result [video]="item">
+      </app-video-result>
+    </div>
+    <!-- pagination  -->
+    <div class="pagination mt-10">
+      <mat-paginator [length]="data.length"
+                     [pageSize]="5"
+                     (page)="pageEvent = $event; onChange($event)"
+                     aria-label="Select page">
+      </mat-paginator>
+    </div>
+  </div>
+

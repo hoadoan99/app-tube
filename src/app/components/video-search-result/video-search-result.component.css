@@ -1,0 +1,13 @@
+.mat-form-field {
+    margin-right: 12px;
+  }
+  .video-result{
+    background-color: #EDEDED;
+    padding: 50px;
+  }
+  .sort-content{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
